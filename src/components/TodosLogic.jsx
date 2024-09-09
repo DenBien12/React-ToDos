@@ -2,6 +2,7 @@ import InputTodo from "./InputTodo";
 import TodosList from "./TodosList";
 import { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
+import { TodosProvider } from "../context/TodosContext";
 const TodosLogic= ()=>{
   const [todos, setTodos] = useState(getInitialTodos());
 
